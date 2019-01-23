@@ -1,38 +1,42 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import './carousel.css';
+;
 
-const Slider = props => {
-  return (
-    <div class='carousel carousel-animated carousel-animate-slide'>
-    <div class='carousel-container'>
-      <div class='carousel-item has-background is-active'>
-        <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" width="640" height="310" />
-        <div class="title">Merry Christmas</div>
-      </div>
-      <div class='carousel-item has-background'>
-        <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />
-        <div class="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
-      </div>
-      <div class='carousel-item has-background'>
-        <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" />
-        <div class="title">Sushi time</div>
-      </div>
-      <div class='carousel-item has-background'>
-        <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" width="640" height="310" />
-        <div class="title">Life</div>
-      </div>
-    </div>
-    <div class="carousel-navigation">
-      <div class="carousel-nav-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      </div>
-      <div class="carousel-nav-right">
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
+class DemoCarousel extends Component {
+    render() {
+        return (
 
-  )
+            <Carousel class="bigCarousel">
+
+
+                <div class="red">
+                    <img src="https://assets1.ignimgs.com/2018/10/10/majorasmaskanxiety-1280-1539207707636_1280w.jpg" />
+
+                </div>
+                <div class="blue">
+                    <img src="https://s2.thcdn.com/productimg/600/600/11037907-9194343849920122.jpg" />
+
+                </div>
+                <div class="green">
+                    <img src="https://cdn.videogamesblogger.com/wp-content/uploads/2014/11/zelda-majoras-mask-3d-link-zora-deku-mask-artwork-3ds-official.jpg" />
+                </div>
+                <div class="red">
+                    <img src="https://assets1.ignimgs.com/2018/10/10/majorasmaskanxiety-1280-1539207707636_1280w.jpg" />
+
+                </div>
+                <div class="green">
+                    <img src="https://cdn.videogamesblogger.com/wp-content/uploads/2014/11/zelda-majoras-mask-3d-link-zora-deku-mask-artwork-3ds-official.jpg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+
+
+            </Carousel>
+        );
+    }
 }
 
-export default Slider;
+export default DemoCarousel;

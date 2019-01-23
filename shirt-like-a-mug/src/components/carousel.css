@@ -1,0 +1,17 @@
+.bigCarousel{
+  height:500px;
+}
+.red, .green, .blue{
+  height:500px;
+  width:100%;
+}
+
+.red{
+  background-color:white; 
+ }
+ .blue{
+  background-color:white; 
+ }
+ .green{
+  background-color:white; 
+}

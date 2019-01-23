@@ -1,5 +1,5 @@
-aside.menu{
-  position:fixed;
+.aside {
+  position:center;
   max-width: 250px;
   height: 100vh;
   background-color: rgb(238, 236, 236);

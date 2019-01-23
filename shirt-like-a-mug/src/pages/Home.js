@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import Slider from "../components/carousel"
+import DemoCarousel from "../components/carousel"
 import TheBar from "../components/Navbar"
+import Contact from "../components/footer"
+import Si from "../components/signIn"
+import './home.css';
 
 
 
@@ -12,8 +15,12 @@ class Home extends Component {
 
      
        
-       <div>
-        <Slider/>
+
+       <div class="carousel-holder">
+       <Si/>
+        <DemoCarousel/>
+
+        <Contact/>
       </div>
 
     );
