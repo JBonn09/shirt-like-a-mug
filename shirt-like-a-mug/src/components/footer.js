@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import 'bulma/css/bulma.css'
-import slam3 from './images/slam3.png'
+import slam5 from './images/slam5.png'
 import "./footer.css"
 
 
@@ -25,7 +25,12 @@ const Contact = props => {
     <label class="label">Tell us something</label>
 
       <textarea class="textarea" placeholder="10 lines of textarea" rows="10">
-      </textarea><img src={slam3} />
+      
+      </textarea>
+      <a class="button is-warning">Warning</a>
+      {/* <button class="button">Send</button> */}
+      <img style={{width: '900px', height: '500px'}} src={slam5} />
+      
    </div>
 
    

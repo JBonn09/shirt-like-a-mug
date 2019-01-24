@@ -1,8 +1,10 @@
 .bigCarousel{
   height:500px;
+  align-content: center;
+
 }
 .red, .green, .blue{
-  height:500px;
+  height:450px;
   width:100%;
 }
 

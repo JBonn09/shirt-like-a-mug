@@ -8,6 +8,7 @@ import './home.css';
 
 
 
+
 class Home extends Component {
   render() {
     return (
@@ -15,12 +16,16 @@ class Home extends Component {
 
      
        
-
+      <div class="image">
        <div class="carousel-holder">
-       <Si/>
+       
+          <Si/>
         <DemoCarousel/>
+        <div>
 
         <Contact/>
+        </div>
+      </div>
       </div>
 
     );

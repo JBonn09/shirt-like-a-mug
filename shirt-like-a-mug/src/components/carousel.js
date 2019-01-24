@@ -30,11 +30,12 @@ class DemoCarousel extends Component {
                 </div>
                 <div class="green">
                     <img src="https://cdn.videogamesblogger.com/wp-content/uploads/2014/11/zelda-majoras-mask-3d-link-zora-deku-mask-artwork-3ds-official.jpg" />
-                    <p className="legend">Legend 3</p>
+                   
                 </div>
 
 
             </Carousel>
+           
         );
     }
 }
