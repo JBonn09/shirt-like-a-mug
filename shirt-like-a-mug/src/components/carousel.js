@@ -10,7 +10,7 @@ import './carousel.css';
 class PicCarousel extends Component {
     render() {
         return (
-            <Container>
+            <Section>
                 <Columns is-vcentered centered={true} gapless={true}>
                     <Columns.Column size={8}>
                         <Carousel dynamicHeight infiniteLoop stopOnHover showArrows={false} showThumbs={false} showIndicators={false}>
@@ -40,7 +40,7 @@ class PicCarousel extends Component {
                         </Carousel>
                     </Columns.Column>
                 </Columns>
-            </Container>
+            </Section>
         );
     }
 }

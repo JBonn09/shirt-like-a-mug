@@ -12,7 +12,7 @@ class TheBar extends Component {
 
       <Navbar fixed={'fixed'}>
         <Navbar.Brand>
-          <Navbar.Item renderAs="a" href="*"><NavLink to="/">
+          <Navbar.Item renderAs="a" href="*"><NavLink to="*">
             <img style={{ width: '70px', height: '100px' }}
               src={slam} />
 
