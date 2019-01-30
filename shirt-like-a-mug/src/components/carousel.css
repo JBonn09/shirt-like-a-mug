@@ -1,12 +1,18 @@
+/* .carousel-holder {
+  height: 100%;
+  width: 70vw;
+  margin-left: 22vw;
+}
+
 .bigCarousel{
   height:500px;
 }
-.red, .green, .blue{
+.pic1, .pic2, .pic3, .pic4, .pic5{
   height:500px;
   width:100%;
-}
+} */
 
-.red{
+/* .red{
   background-color:white; 
  }
  .blue{
@@ -14,4 +20,4 @@
  }
  .green{
   background-color:white; 
-}
+} */
