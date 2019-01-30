@@ -1,41 +1,48 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Columns, Section, Container, Footer, Hero } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
-import slam5 from './images/slam5.png'
-import "./footer.css"
 
 
 
-const Contact = props => {
-  return (
-   
-      
-      <div class="field">
-      <aside class="contactUs">Contact Us</aside>
-  <label class="label">Name</label>
-  
-    <input class="input" type="text" placeholder="e.g Alex Smith"/>
- 
+
+class Contact extends Component {
+  render() {
+    return (
+      <Columns>
+        <Columns.Column>
+          <Hero color="warning">
+            <Section>
+              <Container>
 
 
-  <label class="label">Email</label>
- 
-    <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com"/>
 
-    <label class="label">Tell us something</label>
+                <div class="content">
+                  <h2 class="contactUs">Contact Us</h2>
+                  <label class="label">Name</label>
 
-      <textarea class="textarea" placeholder="10 lines of textarea" rows="10">
-      
-      </textarea>
-      <a class="button is-warning">Warning</a>
-      {/* <button class="button">Send</button> */}
-      <img style={{width: '900px', height: '500px'}} src={slam5} />
-      
-   </div>
+                  <input class="input" type="text" placeholder="e.g Alex Smith" />
 
-   
-    
-        )
-      }
-      
-      export default Contact;
+                  <label class="label">Email</label>
+
+                  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" />
+
+                  <label class="label">Tell us something</label>
+
+                  <textarea class="textarea" placeholder="10 lines of textarea" rows="5">
+                  </textarea>
+                  {/*  */}
+                </div>
+
+
+
+              </Container>
+            </Section>
+          </Hero>
+        </Columns.Column>
+      </Columns>
+
+    )
+  }
+};
+export default Contact;
