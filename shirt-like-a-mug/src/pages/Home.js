@@ -9,6 +9,7 @@ import './home.css';
 
 
 
+
 class Home extends Component {
   render() {
     return (
@@ -30,7 +31,7 @@ class Home extends Component {
           </Box>
         </Section>
         <Contact />
-      </div>
+</div>
 
     );
   }
@@ -38,28 +39,3 @@ class Home extends Component {
 
 
 export default Home;
-{/* <div>
-        <Hero>
-          <Hero.Body>
-            <Columns>
-              <Section>
-                <Columns.Column size={3}>
-                  <TheBar />
-                </Columns.Column>
-              </Section>
-
-              <Section>
-                <Columns.Column size={8}>
-                  <PicCarousel />
-                </Columns.Column>
-              </Section>
-
-              <Section>
-                <Columns.Column>
-                  <Contact />
-                </Columns.Column>
-              </Section>
-            </Columns>
-          </Hero.Body>
-        </Hero>
-      </div> */}
