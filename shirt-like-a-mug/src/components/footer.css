@@ -1,14 +1,4 @@
-
-
-
-.button {
-  margin: 10px;
-  padding:10px;
-  font-size: 10px;
-}
 .field {
-  float: left;
-  margin: 10px;
-  padding: 5px;
-  width: 600px;
+  position: bottom;
+  /* background: gray; */
 }

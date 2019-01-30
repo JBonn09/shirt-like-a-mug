@@ -1,55 +1,133 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Columns, Container, Section, Navbar } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
 import "./NavBar.css"
-import slam from '../components/Images/slam.png'
-
-// import { Link } from react-router
+import slam from './Images/slam.png'
 
 
-const TheBar = props => {
-  return (
+class TheBar extends Component {
+  render() {
+    return (
+
+      <Navbar fixed={'fixed'}>
+        <Navbar.Brand>
+          <Navbar.Item renderAs="a" href="*"><NavLink to="/">
+            <img style={{ width: '70px', height: '100px' }}
+              src={slam} />
 
 
-    <aside class="menu">
+
+          </NavLink>
+          </Navbar.Item>
+          {/* <Navbar.Burger
+            active={open}
+            onClick={() =>
+              this.setState(state => {
+                open: !state.open;
+              })
+            }
+          /> */}
+        </Navbar.Brand>
+        <Navbar.Menu >
+          <Navbar.Container>
+            <Navbar.Item >
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>
+                    <NavLink to="/premade">Templates</NavLink>
+                  </strong>
+                </a>
+              </div>
+            </Navbar.Item>
+            <Navbar.Item >
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>
+                    <NavLink to="/custom">Shirts & Mugs</NavLink>
+                  </strong>
+                </a>
+              </div>
+            </Navbar.Item>
+            <Navbar.Item >
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>
+                    <NavLink to="/checkout">Shopping Cart</NavLink>
+                  </strong>
+                </a>
+              </div>
+            </Navbar.Item>
+
+          </Navbar.Container>
+          <Navbar.Container position="end">
+            <Navbar.Item href="Login" position="end" >
+              <div class="buttons" >
+                <a
+                  class=" button is-primary" ><strong>Sign-Up</strong>
+                </a>
+              </div>
+            </Navbar.Item>
+            <Navbar.Item href="Signup" position="end" >
+              <div class="buttons">
+                <a
+                  class="button is-danger"><strong>Login</strong>
+                </a>
+              </div>
+            </Navbar.Item>
+          </Navbar.Container>
+        </Navbar.Menu>
+      </Navbar>
+
+
+
+
+
+      // <Columns>
+      //   <Columns.Column narrow>
+
+      //     <aside class="menu">
+      //       <img src={slam} />
+
+      //       <p class="menu-label">Products</p>
+
+      //       <a class="is-active">
+
+      //         Pre-Made Templates</a>
+
+      //       <ul class="menu-list">
+      //         <li><NavLink to="/premade">Shirt</NavLink></li>
+      //         <li><a>Mug</a></li>
+      //       </ul>
+      //       <p class="menu-label">
+      //         Administration
+      //     </p>
+      //     </aside>
+
+      //   </Columns.Column>
+      // </Columns>
+
+
+    )
+  }
+};
+export default TheBar;
+
+{/* <aside class="menu">
       <img src={slam} />
-      <li>
-      <a class="is-active">Shirts</a>
-      </li>
+
+      <p class="menu-label">Products</p>
+
+      <a class="is-active">
+
+        Pre-Made Templates</a>
+
       <ul class="menu-list">
-        <li><NavLink to="/Custom">Short sleeve</NavLink></li>
-        <li><a>Long Sleeve</a></li>
+        <li><NavLink to="/premade">Shirt</NavLink></li>
+        <li><a>Mug</a></li>
       </ul>
       <p class="menu-label">
         Administration
     </p>
-   
-    <ul class="menu-list">
-        <li><a>Short sleeve</a></li>
-        <li><a>Long Sleeve</a></li>
-      </ul>
- 
-      <ul class="menu-list">
-        <li>
-          
-          <a class="is-active">MUGS</a>
-          <ul>
-            
-            <li><a>Small like a Mug</a></li>
-            <li><a>Big like a Mug</a></li>
-          </ul>
-        </li>
-        
-        <li><a>Baby Tee's</a></li>
-        <li><a>Cloud Storage Environment Settings</a></li>
-        <li><a>Authentication</a></li>
-      </ul>
-      <p class="menu-label">
-        About Us
-    </p>
-    </aside>
-
-  )
-}
-
-export default TheBar;
+      
+    </aside> */}

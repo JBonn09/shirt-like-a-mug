@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import TheBar from './components/Navbar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
 import 'bulma/css/bulma.css'
+
+import Home from './pages/Home';
+
+import premade from './pages/custom'
+import Checkout from './pages/checkout'
 import NavBar from "./components/Navbar"
 import footer from "./components/footer"
-import premade from './pages/Custom';
+
+
 
 class App extends Component {
   render() {
@@ -13,11 +18,14 @@ class App extends Component {
 
       <Router>
         <div>
-          <NavBar />
+
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/" component={footer} />
-            <Route exact path="/Custom" component={premade} />
+
+            <Route exact path="/custom" component={premade} />
+           
+            <Route exact path="/checkout" component={Checkout} />
+            <Route exact path="*" component={Home} />
+
           </Switch>
         </div>
       </Router>
