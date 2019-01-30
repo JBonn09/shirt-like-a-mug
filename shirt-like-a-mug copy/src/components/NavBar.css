@@ -1,0 +1,9 @@
+aside.menu{
+  position:fixed;
+  max-width: 250px;
+  height: 100vh;
+  background-color: rgb(238, 236, 236);
+  margin: 15px;
+  padding: 10px;
+  font-style: oblique;
+}

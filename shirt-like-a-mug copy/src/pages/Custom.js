@@ -32,7 +32,7 @@ class premade extends Component {
         <TheBar/>
 
         
-        <img src="https://images-na.ssl-images-amazon.com/images/I/616fFv4-9eL._SY550_.jpg" alt="" />
+        <img src={this.state.photos.photoOne} alt="" />
         <img src={this.state.photos.photoTwo} alt="" />
         <img src={this.state.photos.photoThree} alt="" />
         
