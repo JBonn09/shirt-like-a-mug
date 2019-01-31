@@ -60,4 +60,45 @@ db.on("error", function(error) {
       }
     });
   });
+
+  app.post("/AddToCart"),function(req,re){
+    var col = db.carts;
+  var cart = db.findOne({
+      _id: userId
+    , "products._id": req.body.productId
+    , status: "active"});
+  var oldQuantity = 0;
+  
+  for(var i = 0; i < cart.products.length; i++) {
+    if(cart.products[i]._id == productId) {
+      oldQuantity = cart.products[i].quantity;
+    }
+  }
+  
+  var newQuantity = 2;
+  var delta = newQuantity - oldQuantity;
+  
+  col.update({
+      _id: userId
+    , "products._id": req.body.productId
+    , status: "active"
+  }, {
+    $set: {
+        modified_on: new Date()
+      , "products.$.quantity": newQuantity
+    } 
+  });
+  var colP = db.products;
+  colP.update({
+      _id: productId
+    , quantity: { $gte: quantity }
+  }, {
+      $inc: { quantity: -quantity }
+    , $push: {
+      reserved: {
+        quantity: quantity, _id: userId, created_on: new Date()
+      }
+    }
+  });
+  }
   
