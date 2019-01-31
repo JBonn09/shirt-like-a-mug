@@ -9,7 +9,7 @@ export default {
     name: "whatever 2"
   },
   photoThree: {
-    url: require('./pictures/IMG_0416.JPG'),
+    url: require('./pictures/IMG_0447.JPG'),
     name: "number 3"
   },
   photoFour: {
@@ -43,5 +43,9 @@ export default {
   photoEleven: {
     url: require('./pictures/IMG_0449.JPG'),
     name: "number 11"
+  },
+  photo12: {
+    url: require('./pictures/IMG_2034.jpg'),
+    name: "number 12"
   },
 }

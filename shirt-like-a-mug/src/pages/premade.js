@@ -4,14 +4,19 @@ import TheBar from "../components/Navbar";
 import Contact from "../components/footer";
 import { Carousel } from "react-responsive-carousel";
 import './home.css';
+import pictures from "../components/Images/pictures"
 
 
 
 
 class Premade extends Component {
+    state = {
+        photos: pictures
+    }
     render() {
         return (
 
+           
             <div>
                 <TheBar />
                 <p>Premade</p>
@@ -25,7 +30,7 @@ class Premade extends Component {
                                     <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
-g
+
                                             <Media.Item>
                                                 <Heading size={4}>Shirt/Mug Product Name</Heading>
                                             </Media.Item>
@@ -51,7 +56,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
+                                    <Card.Image size="1x1" src={this.state.photos.photoTwo.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -80,7 +85,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
+                                    <Card.Image size="1x1" src={this.state.photos.photoThree.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -109,7 +114,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoFour.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -138,7 +143,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoFive.url}/>
                                     <Card.Content>
                                         <Media>
 
@@ -176,7 +181,7 @@ g
                         <Columns>
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photo12.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -207,7 +212,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -238,7 +243,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -269,7 +274,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -300,7 +305,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url}/>
                                     <Card.Content>
                                         <Media>
 
@@ -331,7 +336,7 @@ g
 
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src="http://bulma.io/images/placeholders/1280x960.png" />
+                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
 
@@ -373,6 +378,5 @@ g
         );
     }
 };
-
 
 export default Premade;

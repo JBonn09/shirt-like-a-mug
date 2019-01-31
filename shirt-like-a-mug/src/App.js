@@ -5,8 +5,9 @@ import 'bulma/css/bulma.css'
 
 import Home from './pages/Home';
 
-import premade from './pages/custom'
+import Premade from './pages/custom'
 import Checkout from './pages/checkout'
+import Custom from "./pages/premade"
 import NavBar from "./components/Navbar"
 import footer from "./components/footer"
 
@@ -21,10 +22,12 @@ class App extends Component {
 
           <Switch>
 
-            <Route exact path="/custom" component={premade} />
-           
+          <Switch>
+            <Route exact path="/premade" component={Premade} />
+            <Route exact path="/custom" component={Custom} />
             <Route exact path="/checkout" component={Checkout} />
             <Route exact path="*" component={Home} />
+          </Switch>
           </Switch>
         </div>
       </Router>
