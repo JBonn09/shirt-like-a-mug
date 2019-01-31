@@ -19,12 +19,10 @@ class App extends Component {
         <div>
 
           <Switch>
-
             <Route exact path="/premade" component={Premade} />
             <Route exact path="/custom" component={Custom} />
             <Route exact path="/checkout" component={Checkout} />
             <Route exact path="*" component={Home} />
-
           </Switch>
         </div>
       </Router>

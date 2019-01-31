@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Container, Content, Columns, Section } from 'react-bulma-components/full';
 import { Carousel } from 'react-responsive-carousel';
-import './carousel.css';
-;
+
+
 
 class PicCarousel extends Component {
     render() {

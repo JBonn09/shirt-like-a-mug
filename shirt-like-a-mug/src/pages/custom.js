@@ -13,7 +13,9 @@ class Custom extends Component {
         return (
 
             <div>
+                <TheBar />
                 <p>Custom</p>
+                <Contact />
             </div>
 
         );

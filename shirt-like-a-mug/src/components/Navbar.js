@@ -10,10 +10,10 @@ class TheBar extends Component {
   render() {
     return (
 
-      <Navbar fixed={'fixed'}>
+      <Navbar color="dark" fixed={'sticky'}>
         <Navbar.Brand>
           <Navbar.Item renderAs="a" href="*"><NavLink to="/">
-            <img style={{ width: '70px', height: '100px' }}
+            <img style={{ width: '50px', height: '100px' }}
               src={slam} />
 
 
@@ -33,7 +33,7 @@ class TheBar extends Component {
           <Navbar.Container>
             <Navbar.Item >
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-danger">
                   <strong>
                     <NavLink to="/premade">Templates</NavLink>
                   </strong>
@@ -42,7 +42,7 @@ class TheBar extends Component {
             </Navbar.Item>
             <Navbar.Item >
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-danger">
                   <strong>
                     <NavLink to="/custom">Shirts & Mugs</NavLink>
                   </strong>
@@ -51,7 +51,7 @@ class TheBar extends Component {
             </Navbar.Item>
             <Navbar.Item >
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-danger">
                   <strong>
                     <NavLink to="/checkout">Shopping Cart</NavLink>
                   </strong>
@@ -80,54 +80,7 @@ class TheBar extends Component {
       </Navbar>
 
 
-
-
-
-      // <Columns>
-      //   <Columns.Column narrow>
-
-      //     <aside class="menu">
-      //       <img src={slam} />
-
-      //       <p class="menu-label">Products</p>
-
-      //       <a class="is-active">
-
-      //         Pre-Made Templates</a>
-
-      //       <ul class="menu-list">
-      //         <li><NavLink to="/premade">Shirt</NavLink></li>
-      //         <li><a>Mug</a></li>
-      //       </ul>
-      //       <p class="menu-label">
-      //         Administration
-      //     </p>
-      //     </aside>
-
-      //   </Columns.Column>
-      // </Columns>
-
-
     )
   }
 };
 export default TheBar;
-
-{/* <aside class="menu">
-      <img src={slam} />
-
-      <p class="menu-label">Products</p>
-
-      <a class="is-active">
-
-        Pre-Made Templates</a>
-
-      <ul class="menu-list">
-        <li><NavLink to="/premade">Shirt</NavLink></li>
-        <li><a>Mug</a></li>
-      </ul>
-      <p class="menu-label">
-        Administration
-    </p>
-      
-    </aside> */}

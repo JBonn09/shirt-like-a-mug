@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import DemoCarousel from "../components/carousel"
 import Contact from "../components/footer"
-import Si from "../components/signIn"
+import TheBar from "../components/Navbar"
 import './home.css';
 
 
@@ -12,7 +11,11 @@ class Checkout extends Component {
     return (
 
       <div>
+        <TheBar />
         <h1>Checkout</h1>
+        <Contact />
+
+
       </div>
 
     );
