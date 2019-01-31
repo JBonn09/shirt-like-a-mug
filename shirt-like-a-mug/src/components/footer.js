@@ -6,7 +6,6 @@ import 'bulma/css/bulma.css'
 
 
 
-
 class Contact extends Component {
   render() {
     return (
