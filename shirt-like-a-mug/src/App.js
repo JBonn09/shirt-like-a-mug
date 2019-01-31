@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'bulma/css/bulma.css'
 
 import Home from './pages/Home';
-import Premade from './pages/premade'
-import Custom from './pages/custom'
+
+import premade from './pages/custom'
 import Checkout from './pages/checkout'
 import NavBar from "./components/Navbar"
 import footer from "./components/footer"
+
 
 
 class App extends Component {
@@ -19,8 +20,14 @@ class App extends Component {
         <div>
 
           <Switch>
+<<<<<<< HEAD
             <Route exact path="/premade" component={Premade} />
             <Route exact path="/custom" component={Custom} />
+=======
+
+            <Route exact path="/custom" component={premade} />
+           
+>>>>>>> final-project-pulled-code
             <Route exact path="/checkout" component={Checkout} />
             <Route exact path="*" component={Home} />
           </Switch>
@@ -31,6 +38,8 @@ class App extends Component {
     );
   }
 };
+
+
 
 
 export default App;

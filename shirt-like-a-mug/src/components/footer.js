@@ -3,6 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 import { Columns, Section, Container, Footer, Hero } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> final-project-pulled-code
 
 
 
@@ -47,4 +51,7 @@ class Contact extends Component {
 };
 export default Contact;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> final-project-pulled-code

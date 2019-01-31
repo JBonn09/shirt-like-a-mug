@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { Columns, Container, Section, Navbar } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
 import "./NavBar.css"
-import slam from './images/slam.png'
+import slam from './Images/slam.png'
 
 
 class TheBar extends Component {
@@ -12,8 +12,13 @@ class TheBar extends Component {
 
       <Navbar color="dark" fixed={'sticky'}>
         <Navbar.Brand>
+<<<<<<< HEAD
           <Navbar.Item renderAs="a" href="*"><NavLink to="/">
             <img style={{ width: '50px', height: '100px' }}
+=======
+          <Navbar.Item renderAs="a" href="*"><NavLink to="*">
+            <img style={{ width: '70px', height: '100px' }}
+>>>>>>> final-project-pulled-code
               src={slam} />
 
 
@@ -84,3 +89,25 @@ class TheBar extends Component {
   }
 };
 export default TheBar;
+<<<<<<< HEAD
+=======
+
+{/* <aside class="menu">
+      <img src={slam} />
+
+      <p class="menu-label">Products</p>
+
+      <a class="is-active">
+
+        Pre-Made Templates</a>
+
+      <ul class="menu-list">
+        <li><NavLink to="/premade">Shirt</NavLink></li>
+        <li><a>Mug</a></li>
+      </ul>
+      <p class="menu-label">
+        Administration
+    </p>
+      
+    </aside> */}
+>>>>>>> final-project-pulled-code

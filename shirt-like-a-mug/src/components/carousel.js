@@ -9,7 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 class PicCarousel extends Component {
     render() {
         return (
-            <Container>
+            <Section>
                 <Columns is-vcentered centered={true} gapless={true}>
                     <Columns.Column size={8}>
                         <Carousel dynamicHeight infiniteLoop stopOnHover showArrows={false} showThumbs={false} showIndicators={false}>
@@ -29,6 +29,7 @@ class PicCarousel extends Component {
                             <div class="pic4">
                                 <img src="https://assets1.ignimgs.com/2018/10/10/majorasmaskanxiety-1280-1539207707636_1280w.jpg" />
 
+
                             </div>
                             <div class="pic5">
                                 <img src="https://cdn.videogamesblogger.com/wp-content/uploads/2014/11/zelda-majoras-mask-3d-link-zora-deku-mask-artwork-3ds-official.jpg" />
@@ -39,7 +40,7 @@ class PicCarousel extends Component {
                         </Carousel>
                     </Columns.Column>
                 </Columns>
-            </Container>
+            </Section>
         );
     }
 }

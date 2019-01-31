@@ -9,7 +9,10 @@ import './home.css';
 
 
 
+
+
 class Home extends Component {
+ 
   render() {
     return (
       <div>
@@ -30,11 +33,15 @@ class Home extends Component {
           </Box>
         </Section>
         <Contact />
-      </div>
+</div>
 
     );
   }
 };
 
 
+<<<<<<< HEAD
 export default Home;
+=======
+export default Home;
+>>>>>>> final-project-pulled-code
