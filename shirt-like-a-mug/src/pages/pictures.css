@@ -1,0 +1,8 @@
+.Card.Imgage {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+

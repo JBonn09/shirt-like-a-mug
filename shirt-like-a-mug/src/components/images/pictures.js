@@ -1,5 +1,4 @@
 
-
 export default {
   photoOne: {
     url: require('./pictures/IMG_0396.JPG'),
