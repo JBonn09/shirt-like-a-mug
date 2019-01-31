@@ -8,7 +8,7 @@ import pictures from "../components/images/pictures"
 
 
 
-class Custom extends Component {
+class Premade2 extends Component {
     state = {
         photos: pictures
     }
@@ -27,4 +27,4 @@ class Custom extends Component {
 };
 
 
-export default Custom;
+export default Premade2;

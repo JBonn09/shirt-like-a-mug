@@ -10,10 +10,16 @@ import './home.css';
 
 class Premade extends Component {
     render() {
+        console.log("I am")
         return (
 
-            <div>
-                <p>Premade</p>
+
+            <div id="card">
+                <img src="" >Product 1</img>
+                <div class="container">
+                    <span>Quantity</span><input type=""></input>
+                    <button>buy</button>
+                </div>
             </div>
 
         );

@@ -2095,6 +2095,16 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
+bulma-extensions@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/bulma-extensions/-/bulma-extensions-4.0.1.tgz#aa52dfd3b03eae095fdc8784d27bdd48c63f6035"
+  integrity sha512-gyn8OXlZWWRyOEh1Do1oKzZj3BuPFzruBK6tPhDs13cxPF539P7jvK+LVttQQPUIRq5B2WCjR/JaZmXSPxKg1g==
+
+bulma@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.1.tgz#73c2e3b2930c90cc272029cbd19918b493fca486"
+  integrity sha512-wRSO2LXB+qI9Pyz2id+uZr4quz5aftSN7Ay1ysr1+krzVp3utD+Ci4CeKuZdrYGc800t65b7heXBL6qw2Wo/lQ==
+
 bulma@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.2.tgz#8e944377b74c7926558830d38d8e19eaf49f5fb6"
@@ -2363,7 +2373,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5, classnames@^2.2.6:
+classnames@2.2.6, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -8329,6 +8339,14 @@ react-autowhatever@^10.1.2:
     react-themeable "^1.1.0"
     section-iterator "^2.0.0"
 
+react-bulma-components@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-2.3.0.tgz#a25fd8f57b5748b0969673dfbfd2cd9186287522"
+  integrity sha512-gt1SeJmknPTET9HOcn+Z3kweYSkxswRgMYgMYOkUUKCtqc70fJfz5+FPZmczUzxej0sTXzwXIVWUqm1ftVu31g==
+  dependencies:
+    bulma "0.7.1"
+    classnames "2.2.6"
+
 react-chartjs-2@^2.7.0:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/react-chartjs-2/-/react-chartjs-2-2.7.4.tgz#e41ea4e81491dc78347111126a48e96ee57db1a6"
@@ -8376,6 +8394,13 @@ react-dom@^16.7.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.12.0"
+
+react-easy-swipe@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/react-easy-swipe/-/react-easy-swipe-0.0.16.tgz#5a3d949a8f975d05be92a818254315d1318a81ea"
+  integrity sha1-Wj2Umo+XXQW+kqgYJUMV0TGKgeo=
+  dependencies:
+    prop-types "^15.5.8"
 
 react-error-overlay@^5.1.2:
   version "5.1.2"
@@ -8431,6 +8456,15 @@ react-popper@^0.7.5:
   dependencies:
     popper.js "^1.12.5"
     prop-types "^15.5.10"
+
+react-responsive-carousel@^3.1.45:
+  version "3.1.46"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.46.tgz#2c57c1d8708c9179d8fa146f506e012bb12a373f"
+  integrity sha512-IojuucuudDwM7bx3NI1SLjBCQI6t3W/lK7oEgDr5CPegzu+jrxwMM7uWRduaYH3AflBBOG3MaxkTduMG4R2DUQ==
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.5.8"
+    react-easy-swipe "^0.0.16"
 
 react-router-dom@^4.3.1:
   version "4.3.1"

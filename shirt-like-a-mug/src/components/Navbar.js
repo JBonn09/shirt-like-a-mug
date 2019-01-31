@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { Columns, Container, Section, Navbar } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
 import "./NavBar.css"
-import slam from './Images/slam.png'
+import slam from './images/slam.png'
 
 
 class TheBar extends Component {
