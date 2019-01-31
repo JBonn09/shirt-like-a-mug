@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Columns, Section, Container, Footer, Hero } from 'react-bulma-components/full'
 import 'bulma/css/bulma.css'
-import slam3 from './images/slam3.png'
-// import "./footer.css"
+
+
 
 
 
@@ -48,20 +48,3 @@ class Contact extends Component {
 };
 export default Contact;
 
-
-// {/* <div class="content">
-//                 <h2 class="contactUs">Contact Us</h2>
-//                 <label class="label">Name</label>
-
-//                 <input class="input" type="text" placeholder="e.g Alex Smith" />
-
-//                 <label class="label">Email</label>
-
-//                 <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" />
-
-//                 <label class="label">Tell us something</label>
-
-//                 <textarea class="textarea" placeholder="10 lines of textarea" rows="5">
-//                 </textarea>
-//                 {/*  */}
-//               </div> */}

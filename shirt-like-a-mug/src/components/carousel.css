@@ -5,7 +5,10 @@
 }
 
 .bigCarousel{
-  height:500px;
+  height: 100%;
+  width: 70vw;
+  margin-left: 24vw;
+
 }
 .pic1, .pic2, .pic3, .pic4, .pic5{
   height:500px;
