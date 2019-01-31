@@ -4,16 +4,41 @@ import TheBar from "../components/Navbar";
 import Contact from "../components/footer";
 import { Carousel } from "react-responsive-carousel";
 import './home.css';
-import pictures from "../components/Images/pictures"
 
-
+import pictures from '../components/Images/pictures.js';
+import Mongodb from "../mongodb";
+import $ from 'jquery';
+import axios from 'axios';
 
 
 class Premade extends Component {
     state = {
-        photos: pictures
+        photos: pictures,
+        Products:[]
     }
+   componentDidMount(){
+    axios.get("/all", function(data) {
+        console.log(data)
+        // // Call our function to generate a table body
+        // displayResults(data);
+      }).then(res=> {
+        this.setState({ Products: res.data }).then(p => {
+          console.log(JSON.stringify(this.state.Products))
+        }); 
+    })
+//this.getDataFromDb();
+   }
+getDataFromDb = () => {
+    fetch("http://localhost:3001/all")
+      //.then(response => console.log(response)
+      .then(res => this.setState({ Products: res.data }).then(p => {
+        console.log(JSON.stringify(this.state.Products))
+      }))
+  };
+
+
     render() {
+        console.log(this.state.photos)
         return (
 
            
@@ -27,12 +52,12 @@ class Premade extends Component {
                         <Columns>
                             <Columns.Column>
                                 <Card>
-                                    <Card.Image size="1x1" src={this.state.photos.photoOne.url} />
+                                    <Card.Image id="image" size="1x1" src={this.state.photos.photoOne.url} />
                                     <Card.Content>
                                         <Media>
 
                                             <Media.Item>
-                                                <Heading size={4}>Shirt/Mug Product Name</Heading>
+                                                <Heading id="item_name" size={4}>Shirt/Mug Product Name</Heading>
                                             </Media.Item>
                                         </Media>
                                         <Content>

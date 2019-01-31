@@ -26,7 +26,7 @@ class Home extends Component {
           </Message.Header>
               <Message.Body>
 
-                asdfsadf dafsadf adf adf df adf sdf dfkj sdf klj asdfklj asdfkj asdf lkj dsf lkj adsf lkj sadf klj df lkj adsf lkj asdf klj fASDFSADFASDFASDFasdfsadf dafsadf adf adf df adf sdf dfkj sdf klj asdfklj asdfkj asdf lkj dsf lkj adsf lkj sadf klj df lkj adsf lkj asdf klj fASDFSADFASDFASDFasdfsadf dafsadf adf adf df adf sdf dfkj sdf klj asdfklj asdfkj asdf lkj dsf lkj adsf lkj sadf klj df lkj adsf lkj asdf klj fASDFSADFASDFASDFasdfsadf dafsadf adf adf df adf sdf dfkj sdf klj asdfklj asdfkj asdf lkj dsf lkj adsf lkj sadf klj df lkj adsf lkj asdf klj fASDFSADFASDFASDFasdfsadf dafsadf adf adf df adf sdf dfkj sdf klj asdfklj asdfkj asdf lkj dsf lkj adsf lkj sadf klj df lkj adsf lkj asdf klj f
+                Welcome to Shirt like a Mug! 
 
             </Message.Body>
             </Message>
